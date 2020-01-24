@@ -1,6 +1,0 @@
-__pycache__/
-iagavenv/
-*.vscode
-*.pytest_cache
-.gitignore
-.*
