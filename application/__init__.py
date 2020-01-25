@@ -7,7 +7,6 @@ def create_app(name: str, mode: str):
     app = Flask(name)
     from application.base.mongo import mongo
     dbconfig= {'db': 'flaskdb','host': 'mongodb://localhost/flaskdb'}
-
     app.config['MONGODB_SETTINGS'] = dbconfig
     mongo.init_app(app)
     app.register_blueprint(bp_colab)
